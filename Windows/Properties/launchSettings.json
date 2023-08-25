@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "PreProcess (Package)": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    },
+    "PreProcess (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
