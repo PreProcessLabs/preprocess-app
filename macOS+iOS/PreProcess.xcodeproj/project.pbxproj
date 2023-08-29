@@ -271,7 +271,6 @@
 		3FCAA1F329AC7C0100898995 = {
 			isa = PBXGroup;
 			children = (
-				3FB92FCC29EB0E5D0048CDAF /* Migrations */,
 				3FC6C78F29CCF773004E19FF /* Packages */,
 				3FCAA1FE29AC7C0100898995 /* PreProcess */,
 				3F6AAE5A29EBBC0100843D71 /* PreProcessExtension */,
@@ -704,7 +703,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PreProcess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PreProcess;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PreProcess will access your Photo Library to save timelapses";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -765,7 +764,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PreProcess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PreProcess;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PreProcess will access your Photo Library to save timelapses";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
