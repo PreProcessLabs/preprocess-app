@@ -15,7 +15,7 @@ import Foundation
 import ScreenCaptureKit
 import Combine
 import OSLog
-import SwiftUI
+//import SwiftUI
 import CoreGraphics
 
 @MainActor

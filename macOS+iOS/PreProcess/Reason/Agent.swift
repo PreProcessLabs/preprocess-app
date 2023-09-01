@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreGraphics
-import NaturalLanguage
+//import NaturalLanguage
 import OpenAI
 import KeychainSwift
 import XCGLogger

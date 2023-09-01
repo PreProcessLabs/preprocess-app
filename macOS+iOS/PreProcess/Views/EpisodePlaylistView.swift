@@ -404,7 +404,8 @@ struct EpisodePlaylistView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
                 if self.clearMode == false && highlight.count > 0 {
-                    ToolbarItem {
+
+                    ToolbarItem() {
                         Button(action: {
                             self.clearMode = true
                         }) {
@@ -421,6 +422,7 @@ struct EpisodePlaylistView: View {
                         }
                     }
                 }
+                
                 ToolbarItem {
                     Button(action: {
                         copyThumbnail()
@@ -428,6 +430,7 @@ struct EpisodePlaylistView: View {
                         Image(systemName: "doc.on.doc")
                     }
                 }
+                
                 if documents.count > 0 {
                     ToolbarItem {
                         Button(action: {

@@ -15,7 +15,7 @@ import Foundation
 import AVFAudio
 import ScreenCaptureKit
 import OSLog
-import Combine
+//import Combine
 
 /// An object that wraps an instance of `SCStream`, and returns its results as an `AsyncThrowingStream`.
 class CaptureEngine: NSObject, @unchecked Sendable {

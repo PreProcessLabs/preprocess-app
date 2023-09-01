@@ -54,6 +54,12 @@
 		3FDFCE5129ED111900988BAF /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58AE2529B18344007E7703 /* Events.swift */; };
 		3FE7822329DB15A8008CB97D /* AXSwift in Frameworks */ = {isa = PBXBuildFile; platformFilters = (macos, ); productRef = 3FE7822229DB15A8008CB97D /* AXSwift */; };
 		3FE7822629DBDB4A008CB97D /* llama in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE7822529DBDB4A008CB97D /* llama */; };
+		5EB977EC2AA234B7008B1B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977EB2AA234B7008B1B8D /* AppDelegate.swift */; };
+		5EB977F42AA234CF008B1B8D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977F02AA234CF008B1B8D /* RatingView.swift */; };
+		5EB977F52AA234CF008B1B8D /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB977F12AA234CF008B1B8D /* RatingView.xib */; };
+		5EB977F62AA234CF008B1B8D /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB977F22AA234CF008B1B8D /* FeedbackViewController.xib */; };
+		5EB977F72AA234CF008B1B8D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977F32AA234CF008B1B8D /* FeedbackViewController.swift */; };
+		5EB977FB2AA23501008B1B8D /* ToggleCaptureMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977FA2AA23501008B1B8D /* ToggleCaptureMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +139,12 @@
 		3FCAA20A29AC7C0400898995 /* PreProcess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreProcess.entitlements; sourceTree = "<group>"; };
 		3FCAA20C29AC7C0400898995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FDBE5C329D4704300A4C6C0 /* Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
+		5EB977EB2AA234B7008B1B8D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EB977F02AA234CF008B1B8D /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		5EB977F12AA234CF008B1B8D /* RatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
+		5EB977F22AA234CF008B1B8D /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		5EB977F32AA234CF008B1B8D /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		5EB977FA2AA23501008B1B8D /* ToggleCaptureMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleCaptureMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +251,7 @@
 		3FAD36AF29B1C21E00CCCE82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5EB977FA2AA23501008B1B8D /* ToggleCaptureMenuView.swift */,
 				3F6FE07D29C424230061DBF5 /* StaticEpisodeView.swift */,
 				3F14BDD129BF06F900F12FE7 /* EpisodeView.swift */,
 				3F14BDCF29BDE82F00F12FE7 /* EpisodePlaylistView.swift */,
@@ -291,6 +304,8 @@
 		3FCAA1FE29AC7C0100898995 /* PreProcess */ = {
 			isa = PBXGroup;
 			children = (
+				5EB977ED2AA234CF008B1B8D /* Controllers */,
+				5EB977EB2AA234B7008B1B8D /* AppDelegate.swift */,
 				3FC6C76829CBBB1D004E19FF /* Diff */,
 				3F9E3DFA29BA157600FE31CB /* Info.plist */,
 				3F0B8C0329B316920018BD60 /* README.md */,
@@ -315,6 +330,33 @@
 				3FCAA20C29AC7C0400898995 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EB977ED2AA234CF008B1B8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EB977EE2AA234CF008B1B8D /* Feedback */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5EB977EE2AA234CF008B1B8D /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				5EB977EF2AA234CF008B1B8D /* RatingView */,
+				5EB977F22AA234CF008B1B8D /* FeedbackViewController.xib */,
+				5EB977F32AA234CF008B1B8D /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		5EB977EF2AA234CF008B1B8D /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				5EB977F02AA234CF008B1B8D /* RatingView.swift */,
+				5EB977F12AA234CF008B1B8D /* RatingView.xib */,
+			);
+			path = RatingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +476,8 @@
 			files = (
 				3FCAA20D29AC7C0400898995 /* Preview Assets.xcassets in Resources */,
 				3FCAA20929AC7C0400898995 /* Assets.xcassets in Resources */,
+				5EB977F52AA234CF008B1B8D /* RatingView.xib in Resources */,
+				5EB977F62AA234CF008B1B8D /* FeedbackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +505,10 @@
 				3F14BDD029BDE82F00F12FE7 /* EpisodePlaylistView.swift in Sources */,
 				3F14BDCC29BD920200F12FE7 /* ChatView.swift in Sources */,
 				3FCAA20029AC7C0100898995 /* PreProcessApp.swift in Sources */,
+				5EB977F72AA234CF008B1B8D /* FeedbackViewController.swift in Sources */,
+				5EB977F42AA234CF008B1B8D /* RatingView.swift in Sources */,
 				3F14BDD229BF06F900F12FE7 /* EpisodeView.swift in Sources */,
+				5EB977FB2AA23501008B1B8D /* ToggleCaptureMenuView.swift in Sources */,
 				3FAD36AC29B1BD1A00CCCE82 /* Agent.swift in Sources */,
 				3F7BB7DF29E2AC9F00D8A0BB /* AdvancedSearchView.swift in Sources */,
 				3F7BB7DD29E26C7000D8A0BB /* EpisodeModel.swift in Sources */,
@@ -480,6 +527,7 @@
 				3FAD36A629B1BB5C00CCCE82 /* Analysis.swift in Sources */,
 				3FCAA20229AC7C0100898995 /* Persistence.swift in Sources */,
 				3FDBE5C429D4704300A4C6C0 /* Export.swift in Sources */,
+				5EB977EC2AA234B7008B1B8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
