@@ -20,7 +20,7 @@ struct ToggleCaptureMenuView: View {
                 isCapturing = $0
                 handleCapture()
             })
-            Toggle("Capture Screens", isOn: binding)
+            Toggle("Screen Capture", isOn: binding)
                 .toggleStyle(.switch)
     }
     
