@@ -17,6 +17,7 @@ class FeedbackViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         handleRating()
+        NSApp.activate(ignoringOtherApps: true)
     }
     
     @IBAction func onSubmitClick(_ sender: NSButton) {

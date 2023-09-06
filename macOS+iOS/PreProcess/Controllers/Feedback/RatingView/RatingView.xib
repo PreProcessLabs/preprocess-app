@@ -42,7 +42,7 @@
                                         <constraint firstAttribute="height" constant="35" id="mYi-NO-kZ9"/>
                                         <constraint firstAttribute="width" constant="35" id="pKt-hP-yqz"/>
                                     </constraints>
-                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="bhH-Ko-qXJ">
+                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="feedbackstar" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="bhH-Ko-qXJ">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -52,7 +52,7 @@
                                 </button>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-nz-46O">
                                     <rect key="frame" x="45" y="0.0" width="35" height="35"/>
-                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="fBK-G8-jiq">
+                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="feedbackstar" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="fBK-G8-jiq">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -62,7 +62,7 @@
                                 </button>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Eu-xB-Yzx">
                                     <rect key="frame" x="90" y="0.0" width="35" height="35"/>
-                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hgb-Zu-NbC">
+                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="feedbackstar" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hgb-Zu-NbC">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -72,7 +72,7 @@
                                 </button>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fmR-t4-Mrr">
                                     <rect key="frame" x="135" y="0.0" width="35" height="35"/>
-                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="QlT-aC-xzy">
+                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="feedbackstar" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="QlT-aC-xzy">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -81,8 +81,8 @@
                                     </connections>
                                 </button>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-By-qbC">
-                                    <rect key="frame" x="180" y="2" width="35" height="30"/>
-                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="0gB-0O-HAm">
+                                    <rect key="frame" x="180" y="0.0" width="35" height="35"/>
+                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="feedbackstar" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="0gB-0O-HAm">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -141,6 +141,6 @@
         </customView>
     </objects>
     <resources>
-        <image name="star" width="341" height="341"/>
+        <image name="feedbackstar" width="341" height="341"/>
     </resources>
 </document>

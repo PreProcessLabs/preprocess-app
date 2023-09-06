@@ -103,6 +103,8 @@ struct PreProcessApp: App {
             CommandGroup(replacing: .saveItem) { }
             CommandGroup(replacing: .sidebar) { }
         }
+        
+        .windowToolbarStyle(.expanded)
 //#if os(macOS)
 //        MenuBarExtra(
 //            "App Menu Bar Extra", image: "LogoIcon",

@@ -16,8 +16,8 @@ let log = XCGLogger.default
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var mainApp: PreProcessApp?
+    var isScreenCaptureToggleOn = true
     var statusItem: NSStatusItem?
-    //@Environment(\.openWindow) var openWindow
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let bundleID = Bundle.main.bundleIdentifier!
@@ -63,8 +63,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             log.info("Woke up")
             if mainApp != nil {
                 Task {
-                    if await mainApp!.screenRecorder.canRecord {
-                        await mainApp!.screenRecorder.start()
+                    if isScreenCaptureToggleOn {
+                        if await mainApp!.screenRecorder.canRecord {
+                            await mainApp!.screenRecorder.start()
+                        }
                     }
                 }
             }
@@ -82,7 +84,11 @@ extension AppDelegate {
     func setupStatusMenu() {
         let menu = NSMenu()
 
-        let captureView = ToggleCaptureMenuView()
+        var captureView = ToggleCaptureMenuView()
+        captureView.onToggleChange = { [weak self] isToggle in
+            guard let _self = self else { return }
+            _self.isScreenCaptureToggleOn = isToggle
+        }
         let view = NSHostingView(rootView: captureView)
         view.frame = NSRect(x: 0, y: 0, width: 175, height: 30)
         let captureItem = NSMenuItem()

@@ -285,6 +285,7 @@ struct EpisodePlaylistView: View {
         }
         .chartXAxis(.hidden)
         .chartYAxis(.hidden)
+        .navigationBarBackButtonHidden(true)
         .onAppear {
             Task {
                 updateData()
@@ -403,6 +404,21 @@ struct EpisodePlaylistView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
+                
+                //MARK: -  Adding a custom back button due to default back button layout issue
+                ToolbarItem {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image(systemName: "chevron.left")
+                    }
+
+                }
+                
+                ToolbarItem {
+                    Spacer()
+                }
+                
                 if self.clearMode == false && highlight.count > 0 {
 
                     ToolbarItem() {

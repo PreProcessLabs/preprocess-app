@@ -12,15 +12,18 @@ struct ToggleCaptureMenuView: View {
  
     @State private var isCapturing = true
     @StateObject var screenRecorder = ScreenRecorder.shared
+    //@NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    var onToggleChange: ((Bool) -> Void)?
     
     var body: some View {
             let binding = Binding<Bool>(get: {
                 return isCapturing
             }, set: {
                 isCapturing = $0
+                onToggleChange?($0)
                 handleCapture()
             })
-            Toggle("Screen Capture", isOn: binding)
+            Toggle("Capture Screens", isOn: binding)
                 .toggleStyle(.switch)
     }
     
