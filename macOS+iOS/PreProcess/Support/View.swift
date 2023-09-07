@@ -29,6 +29,56 @@ func openFile(path: URL) {
 #endif
 }
 
+//func openSharingPicker(episode: Episode, view: NSView) {
+//    let url = urlForEpisode(start: episode.start, title: episode.title)
+//    let picker = NSSharingServicePicker(items: [url])
+//    picker.show(relativeTo: NSRect(x: 0, y: 0, width: 200, height: 200), of: view, preferredEdge: .minY)
+//}
+
+
+//struct SharingsPicker: NSViewRepresentable, View {
+//    @Binding var isPresented: Bool
+//    var sharingItems: [Any] = []
+//
+//    func makeNSView(context: Context) -> NSView {
+//        let view = NSView()
+//        return view
+//    }
+//
+//    func updateNSView(_ nsView: NSView, context: Context) {
+//        if isPresented {
+//            let picker = NSSharingServicePicker(items: sharingItems)
+//            picker.delegate = context.coordinator
+//
+//            // !! MUST BE CALLED IN ASYNC, otherwise blocks update
+//            DispatchQueue.main.async {
+//                picker.show(relativeTo: .zero, of: nsView, preferredEdge: .minY)
+//            }
+//        }
+//    }
+//
+//    func makeCoordinator() -> Coordinator {
+//        Coordinator(owner: self)
+//    }
+//
+//    class Coordinator: NSObject, NSSharingServicePickerDelegate {
+//        let owner: SharingsPicker
+//
+//        init(owner: SharingsPicker) {
+//            self.owner = owner
+//        }
+//
+//        func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicker, didChoose service: NSSharingService?) {
+//
+//            // do here whatever more needed here with selected service
+//
+//            sharingServicePicker.delegate = nil   // << cleanup
+//            self.owner.isPresented = false        // << dismiss
+//        }
+//    }
+//}
+
+
 extension Date {
     var dayOfYear: Int {
         return Calendar.current.ordinality(of: .day, in: .year, for: self)!

@@ -27,7 +27,7 @@ class Agent : ObservableObject {
         Current Date/Time:
         {current}
         Context:
-        {context}
+        Text taken from screenshot using OCR from the screen, please answer the question
         Question:
         {question}
         Helpful Answer:
@@ -35,7 +35,6 @@ class Agent : ObservableObject {
     
     static let contextTemplate = """
     Results from OCR on a screenshot taken at {when}:
-    {ocr}
     
     """
     // Prompt used when chatting
@@ -212,6 +211,7 @@ class Agent : ObservableObject {
                     }
                 case .failure(let error):
                     log.error(error)
+                    self.onNewToken(token: "Error in ChatGPT")
                 }
             } completion: { error in
                 //Handle streaming error here
@@ -287,7 +287,7 @@ class Agent : ObservableObject {
                 if interval.document.count > 100 {
                     let new_context = Agent.contextTemplate.replacing("{when}", with: interval.from.formatted()).replacing("{ocr}", with: interval.document)
                     if context.count + new_context.count < maxContextLength {
-                        context += new_context
+                        //context += new_context
                     }
                 }
             }

@@ -13,6 +13,7 @@ import Combine
 import Vision
 
 struct EpisodeView: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var bundleCache: BundleCache
     @EnvironmentObject var episodeModel: EpisodeModel
@@ -56,6 +57,24 @@ struct EpisodeView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 HStack {
+                    
+                    //MARK: Working on Export Feature for particular episode
+//                    Button {
+//                        self.showPicker = true
+//                    }
+//                    label: {
+//                        Label("Export", systemImage: "square.and.arrow.up")
+//                    }
+//                    //.background(SharingsPicker(isPresented: $showPicker, sharingItems: [urlForEpisode(start: episode.start, title: episode.title)]))
+//
+//                    Image(systemName: "square.and.arrow.up")
+//                    .onTapGesture {
+//                        //SharingsPicker(isPresented: $showPicker, sharingItems: [urlForEpisode(start: episode.start, title: episode.title)])
+//                        let view = NSHostingView(rootView: self)
+//                        view.frame = NSRect(x: 0, y: 0, width: 175, height: 30)
+//                        openSharingPicker(episode: episode, view: view)
+//                    }
+                    
                     NavigationLink(value: episode) {
                         Image(systemName: "arrow.up.left.and.arrow.down.right")
                     }

@@ -26,6 +26,10 @@ struct EpisodePlaylistView: View {
     
     @State var player: AVPlayer?
     @State private var thumbnailImages: [CGImage?] = []
+    
+    @State private var showPicker = false
+    
+    
 #if os(macOS)
     @State static var windowLengthInSeconds: Int = 60 * 2
 #else
@@ -456,6 +460,23 @@ struct EpisodePlaylistView: View {
                         }
                     }
                 }
+//
+//                ToolbarItem {
+//
+//                    Button(action: {
+//                        self.showPicker = true
+//                    }) {
+//                        Image(systemName: "square.and.arrow.up")
+//                    }
+//                    .background(SharingsPicker(isPresented: $showPicker, sharingItems: [urlForEpisode(start: episodeModel.start, title: episodeModel.title)]))
+
+//                    Button {
+//                        self.showPicker = true
+//                    } label: {
+//                        Label("Export", systemImage: "square.and.arrow.up")
+//                    }
+//                    .background(SharingsPicker(isPresented: $showPicker, sharingItems: [urlForEpisode(start: episodeModel.start, title: episodeModel.title)]))
+//                }
             }
         }
         .id(episodeModel.dataID)

@@ -14,6 +14,7 @@ import Foundation
 import AVKit
 
 struct ContentView: View {
+
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var episodeModel: EpisodeModel
@@ -53,6 +54,7 @@ struct ContentView: View {
     }
     
     var feed: some View {
+        
         GeometryReader { metrics in
             ScrollViewReader { value in
                 ScrollView {

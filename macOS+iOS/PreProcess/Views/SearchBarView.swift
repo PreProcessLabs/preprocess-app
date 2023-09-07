@@ -104,6 +104,7 @@ struct SearchBarView: View {
                             }) {
                                 Image(systemName: showUsage ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
                             }
+                            .help("Apply Filters")
                             .accessibilityLabel("Opens the advanced search pane")
                             .padding()
                             .opacity(0.8)
@@ -126,6 +127,7 @@ struct SearchBarView: View {
                             }) {
                                 Image(systemName: episodeModel.showFaves ? "star.fill": "star")
                             }
+                            .help("Starred Screens")
                             .accessibilityLabel("Filters results to exclude non-starred")
                             .opacity(0.8)
                             .buttonStyle(.plain)
@@ -144,6 +146,7 @@ struct SearchBarView: View {
                             NavigationLink(value: 1) {
                                 Image(systemName: "gearshape")
                             }
+                            .help("Settings Panel")
                             .accessibilityLabel("Opens the settings pane")
                             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                             .opacity(isHoveringSettings ? 0.8 : 1.0)
@@ -164,6 +167,7 @@ struct SearchBarView: View {
                             }) {
                                 Image(systemName: "arrow.clockwise")
                             }
+                            .help("Refresh")
                             .accessibilityLabel("Clears all filters and refreshes the feed")
                             .buttonStyle(.plain)
                             .transformEffect(CGAffineTransformMakeScale(-1, 1))
@@ -186,6 +190,7 @@ struct SearchBarView: View {
                                 }) {
                                     Image(systemName: "timelapse")
                                 }
+                                .help("Export today's work")
                                 .buttonStyle(.plain)
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
 #if os(macOS)
