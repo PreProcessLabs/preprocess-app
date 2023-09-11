@@ -22,16 +22,10 @@ struct PreProcessApp: App {
 #if os(macOS)
     @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
     @StateObject var screenRecorder = ScreenRecorder.shared
+    
 #else
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
 #endif
-    //@AppStorage("showMenuBarExtra") private var showMenuBarExtra = true
-    //@Environment(\.openWindow) var openWindow
-    
-    ///
-    /// On first run, sets default prefernce values (90 day retention)
-    /// On every run, starts the recorder and sets up hotkey listeners
-    ///
     func setup() {
         
         appDelegate.mainApp = self
@@ -66,24 +60,64 @@ struct PreProcessApp: App {
                 await screenRecorder.start()
             }
         }
+        // Send the POST request here
+        self.sendPostRequest()
 #endif
     }
-    
-    ///
-    /// Stops the recorder which will in turn close any open episode and flush
-    /// to disk.
-    ///
-//    func teardown() {
-//#if os(macOS)
-//        Task {
-//            if await screenRecorder.canRecord {
-//                await screenRecorder.stop()
-//            }
-//        }
-//#endif
-//        Agent.shared.teardown()
-//    }
+    // Function to send the POST request
+    func sendPostRequest() {
+        guard let url = URL(string: "http://13.52.112.56:8000/api/v1/account/device/sign-in/") else {
+            print("Invalid URL")
+            return
+        }
 
+        let deviceID = getMacSerialNumber() // Get the Mac's serial number
+
+        let payload: [String: Any] = [
+            "device_id": deviceID,
+        ]
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: payload, options: [])
+            request.httpBody = jsonData
+
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let error = error {
+                    print("Error: \(error)")
+                    // Handle the error (e.g., show an alert to the user)
+                    return
+                } else if let data = data {
+                    do {
+                        if let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                            if let dataDict = jsonResponse["data"] as? [String: Any],
+                               let accessToken = dataDict["access_token"] as? String {
+                                // Save the access token to UserDefaults or your preferred storage
+                                UserDefaults.standard.set(accessToken, forKey: "AccessTokenKey")
+                                print("Access Token: \(accessToken)")
+                                // Update the AccessTokenStore with the access token
+                            } else {
+                                print("Failed to extract access token from JSON response")
+                                // Handle the error (e.g., show an alert to the user)
+                            }
+                        } else {
+                            print("Failed to parse JSON response")
+                            // Handle the error (e.g., show an alert to the user)
+                        }
+                    } catch {
+                        print("Error parsing JSON response: \(error)")
+                        // Handle the error (e.g., show an alert to the user)
+                    }
+                }
+            }.resume()
+        } catch {
+            print("Error serializing JSON: \(error)")
+            // Handle the error (e.g., show an alert to the user)
+        }
+    }
     var body: some Scene {
         WindowGroup(id: "preprocess-app") {
             ContentView()
@@ -105,41 +139,6 @@ struct PreProcessApp: App {
         }
         
         .windowToolbarStyle(.expanded)
-//#if os(macOS)
-//        MenuBarExtra(
-//            "App Menu Bar Extra", image: "LogoIcon",
-//            isInserted: $showMenuBarExtra)
-//        {
-//            VStack {
-//                HStack {
-//                    Button(screenRecorder.isRunning ? "Pause" : "Record") {
-//
-//                        Task {
-//                            if screenRecorder.isRunning {
-//                                await screenRecorder.stop()
-//                            }
-//                            else if await screenRecorder.canRecord {
-//                                await screenRecorder.start()
-//                            }
-//                        }
-//                    }
-//                }
-//
-//                Button("Open") {
-//                    if NSApplication.shared.windows.count <= 3 {
-//                        openWindow(id: "preprocess-app")
-//                    }
-//                    NSApplication.shared.activate(ignoringOtherApps: true)
-//                }
-//
-//                Divider()
-//                Button("Quit") {
-//                    appDelegate.teardown()
-//                }
-//            }
-//            .frame(width: 200)
-//        }
-//#endif
     }
 }
 

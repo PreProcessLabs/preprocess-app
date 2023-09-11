@@ -97,8 +97,6 @@ extension AppDelegate {
         
         menu.addItem(NSMenuItem.separator())
         
-//        let openItem = NSMenuItem(title: "Bring App to Front", action: #selector(openApp), keyEquivalent: "")
-//        menu.addItem(openItem)
         
         let quickStartItem = NSMenuItem(title: "Quick Start", action: #selector(quickURL), keyEquivalent: "")
         menu.addItem(quickStartItem)
