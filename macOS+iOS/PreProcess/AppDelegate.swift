@@ -122,7 +122,7 @@ extension AppDelegate {
     }
 
     @objc func quickURL() {
-        NSWorkspace.shared.open(URL(string: "https://google.com")!)
+        NSWorkspace.shared.open(URL(string: "https://planet-seaplane-93a.notion.site/How-to-use-PreProcess-bce91ac25f7d4ba9bdeb1ff453f4ee9c")!)
     }
     
     @objc func openApp() {
