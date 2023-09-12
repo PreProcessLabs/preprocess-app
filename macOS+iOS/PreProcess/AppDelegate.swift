@@ -115,7 +115,7 @@ extension AppDelegate {
 
         self.statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         self.statusItem?.menu = menu
-        self.statusItem?.button?.image = NSImage(named: "LogoIcon")
+        self.statusItem?.button?.image = NSImage(named: "svgviewer-output")
     }
     
     
