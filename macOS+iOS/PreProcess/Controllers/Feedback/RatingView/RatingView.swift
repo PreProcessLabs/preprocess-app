@@ -18,7 +18,7 @@ public class RatingView: NSView {
     @IBOutlet weak var fifthStarButton: NSButton!
     
     var onStarClick: ((Int) -> Void)?
-    var isUserInteractionEnabled = true
+    public var isUserInteractionEnabled = true
     
     public override init(frame frameRect: NSRect) {
         super.init(frame:frameRect )

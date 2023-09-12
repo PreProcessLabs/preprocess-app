@@ -12,20 +12,23 @@ class FeedbackViewController: NSViewController {
 
     @IBOutlet weak var ratingView: RatingView!
     @IBOutlet var inputTextView: NSTextView!
-
+    @IBOutlet weak var submitSuccessImageView: NSImageView!
+    
     var ratedValue = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         handleRating()
+        submitSuccessImageView.isHidden = true
         NSApp.activate(ignoringOtherApps: true)
     }
 
     @IBAction func onSubmitClick(_ sender: NSButton) {
         guard let accessToken = UserDefaults.standard.string(forKey: "AccessTokenKey") else {
-            // Handle the case where the access token is nil or not available
             return
         }
+        sender.isEnabled = false
+        ratingView.isUserInteractionEnabled = false
 
         // Use the accessToken in your POST request to http://13.52.112.56:8000/api/v1/account/feedback/
         let feedbackPayload: [String: Any] = [
@@ -45,11 +48,14 @@ class FeedbackViewController: NSViewController {
 
             // Send the POST request and handle the response
             URLSession.shared.dataTask(with: request) { data, response, error in
-                if let error = error {
-                    print("Error: \(error)")
-                    // Handle the error (e.g., show an alert to the user)
-                } else if let _ = data {
-                    // Handle the response as needed
+                DispatchQueue.main.async {
+                    if let error = error {
+                        print("Error: \(error)")
+                        sender.isEnabled = true
+                        self.ratingView.isUserInteractionEnabled = true
+                    } else if let _ = data {
+                        self.submitSuccessImageView.isHidden = false
+                    }
                 }
             }.resume()
         } catch {
