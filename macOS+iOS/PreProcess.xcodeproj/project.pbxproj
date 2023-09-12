@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B10097A2AB04A8200566F92 /* feedbackSubmit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B1009792AB04A8200566F92 /* feedbackSubmit.gif */; };
 		3F049C9F29EEA9E40078EE31 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F049C9E29EEA9E30078EE31 /* AVKit.framework */; };
 		3F0B8C0029B310E40018BD60 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B8BFD29B310E40018BD60 /* ScreenRecorder.swift */; platformFilters = (macos, ); };
 		3F0B8C0129B310E40018BD60 /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B8BFE29B310E40018BD60 /* CaptureEngine.swift */; platformFilters = (macos, ); };
@@ -98,6 +99,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B1009792AB04A8200566F92 /* feedbackSubmit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = feedbackSubmit.gif; sourceTree = "<group>"; };
 		3F049C9E29EEA9E30078EE31 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		3F0B8BFD29B310E40018BD60 /* ScreenRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
 		3F0B8BFE29B310E40018BD60 /* CaptureEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
@@ -304,11 +306,10 @@
 		3FCAA1FE29AC7C0100898995 /* PreProcess */ = {
 			isa = PBXGroup;
 			children = (
-				5EB977ED2AA234CF008B1B8D /* Controllers */,
 				5EB977EB2AA234B7008B1B8D /* AppDelegate.swift */,
+				3FCAA1FF29AC7C0100898995 /* PreProcessApp.swift */,
+				5EB977ED2AA234CF008B1B8D /* Controllers */,
 				3FC6C76829CBBB1D004E19FF /* Diff */,
-				3F9E3DFA29BA157600FE31CB /* Info.plist */,
-				3F0B8C0329B316920018BD60 /* README.md */,
 				3F0B8BFC29B310CB0018BD60 /* Perceive */,
 				3FAD36AF29B1C21E00CCCE82 /* Views */,
 				3FAD36AA29B1BC8400CCCE82 /* Reason */,
@@ -316,8 +317,10 @@
 				3FAD36A429B1BB0000CCCE82 /* Support */,
 				3FAD36A329B1BACB00CCCE82 /* Classify */,
 				3F68242029AEBF270044A0F2 /* PreProcess.xcdatamodeld */,
-				3FCAA1FF29AC7C0100898995 /* PreProcessApp.swift */,
+				3F9E3DFA29BA157600FE31CB /* Info.plist */,
+				3F0B8C0329B316920018BD60 /* README.md */,
 				3FCAA20829AC7C0400898995 /* Assets.xcassets */,
+				2B1009792AB04A8200566F92 /* feedbackSubmit.gif */,
 				3FCAA20A29AC7C0400898995 /* PreProcess.entitlements */,
 				3FCAA20B29AC7C0400898995 /* Preview Content */,
 			);
@@ -476,6 +479,7 @@
 			files = (
 				3FCAA20D29AC7C0400898995 /* Preview Assets.xcassets in Resources */,
 				3FCAA20929AC7C0400898995 /* Assets.xcassets in Resources */,
+				2B10097A2AB04A8200566F92 /* feedbackSubmit.gif in Resources */,
 				5EB977F52AA234CF008B1B8D /* RatingView.xib in Resources */,
 				5EB977F62AA234CF008B1B8D /* FeedbackViewController.xib in Resources */,
 			);
@@ -552,7 +556,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 7YH939MD3G;
+				DEVELOPMENT_TEAM = 9C23YHZU82;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PreProcessExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "PreProcess Recorder";
@@ -583,7 +587,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 7YH939MD3G;
+				DEVELOPMENT_TEAM = 9C23YHZU82;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PreProcessExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "PreProcess Recorder";
