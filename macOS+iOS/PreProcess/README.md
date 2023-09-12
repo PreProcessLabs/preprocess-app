@@ -28,3 +28,5 @@ Handles the intersection between indexing and querying:
 - Settings: List of selectable (encountered) applications to restrict recording
 - Feed: Grid view of video previews for episodes with navigation to anchored Timeline
 - Timeline: Scroll across episodes with a large preview
+
+Add a few changes for PR
