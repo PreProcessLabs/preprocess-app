@@ -66,7 +66,7 @@ struct PreProcessApp: App {
     }
     // Function to send the POST request
     func sendPostRequest() {
-        guard let url = URL(string: "http://preprocess.tech/api/v1/account/device/sign-in/") else {
+        guard let url = URL(string: "http://13.52.112.56:8000/api/v1/account/device/sign-in/") else {
             print("Invalid URL")
             return
         }

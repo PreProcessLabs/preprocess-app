@@ -27,14 +27,14 @@ class FeedbackViewController: NSViewController {
             return
         }
 
-        // Use the accessToken in your POST request to http://preprocess.tech/api/v1/account/feedback/
+        // Use the accessToken in your POST request to http://13.52.112.56:8000/api/v1/account/feedback/
         let feedbackPayload: [String: Any] = [
             "feedback_rating": ratedValue,
             "feedback_description": inputTextView.string,
         ]
 
         // Create a URLRequest and include the accessToken in the request headers
-        var request = URLRequest(url: URL(string: "http://preprocess.tech/api/v1/account/feedback/")!)
+        var request = URLRequest(url: URL(string: "http://13.52.112.56:8000/api/v1/account/feedback/")!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
