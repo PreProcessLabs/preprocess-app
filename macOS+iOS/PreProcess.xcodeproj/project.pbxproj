@@ -17,8 +17,6 @@
 		3F14BDD229BF06F900F12FE7 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14BDD129BF06F900F12FE7 /* EpisodeView.swift */; };
 		3F58AE2629B18344007E7703 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58AE2529B18344007E7703 /* Events.swift */; };
 		3F68242229AEBF270044A0F2 /* PreProcess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F68242029AEBF270044A0F2 /* PreProcess.xcdatamodeld */; };
-		3F6AAE5C29EBBC0100843D71 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6AAE5B29EBBC0100843D71 /* SampleHandler.swift */; };
-		3F6AAE6029EBBC0100843D71 /* PreProcessRecorder.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F6AAE5829EBBC0100843D71 /* PreProcessRecorder.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3F6FE07E29C424230061DBF5 /* StaticEpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FE07D29C424230061DBF5 /* StaticEpisodeView.swift */; };
 		3F6FE08129CAB0170061DBF5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6FE08029CAB0170061DBF5 /* SQLite */; };
 		3F7BB7DB29E0112900D8A0BB /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BB7DA29E0112900D8A0BB /* Browser.swift */; };
@@ -43,16 +41,6 @@
 		3FDBE5BB29D0029800A4C6C0 /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDBE5BA29D0029800A4C6C0 /* ObjcExceptionBridging */; };
 		3FDBE5BD29D0029800A4C6C0 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDBE5BC29D0029800A4C6C0 /* XCGLogger */; };
 		3FDBE5C429D4704300A4C6C0 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBE5C329D4704300A4C6C0 /* Export.swift */; };
-		3FDFCE4029ED0F8900988BAF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCAA20129AC7C0100898995 /* Persistence.swift */; };
-		3FDFCE4129ED0F8C00988BAF /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD36A829B1BB9800CCCE82 /* Memory.swift */; };
-		3FDFCE4329ED107500988BAF /* PreProcess-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6C76929CBBB74004E19FF /* PreProcess-Bridging-Header.h */; };
-		3FDFCE4429ED107500988BAF /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD36A529B1BB5C00CCCE82 /* Analysis.swift */; };
-		3FDFCE4529ED107500988BAF /* PreProcess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F68242029AEBF270044A0F2 /* PreProcess.xcdatamodeld */; };
-		3FDFCE4729ED109200988BAF /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDFCE4629ED109200988BAF /* SQLite */; };
-		3FDFCE4929ED109700988BAF /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDFCE4829ED109700988BAF /* KeychainSwift */; };
-		3FDFCE4B29ED109F00988BAF /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDFCE4A29ED109F00988BAF /* XCGLogger */; };
-		3FDFCE4D29ED10A400988BAF /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDFCE4C29ED10A400988BAF /* ObjcExceptionBridging */; };
-		3FDFCE5129ED111900988BAF /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58AE2529B18344007E7703 /* Events.swift */; };
 		3FE7822329DB15A8008CB97D /* AXSwift in Frameworks */ = {isa = PBXBuildFile; platformFilters = (macos, ); productRef = 3FE7822229DB15A8008CB97D /* AXSwift */; };
 		3FE7822629DBDB4A008CB97D /* llama in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE7822529DBDB4A008CB97D /* llama */; };
 		5EB977EC2AA234B7008B1B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977EB2AA234B7008B1B8D /* AppDelegate.swift */; };
@@ -62,16 +50,6 @@
 		5EB977F72AA234CF008B1B8D /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977F32AA234CF008B1B8D /* FeedbackViewController.swift */; };
 		5EB977FB2AA23501008B1B8D /* ToggleCaptureMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB977FA2AA23501008B1B8D /* ToggleCaptureMenuView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3F6AAE5E29EBBC0100843D71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FCAA1F429AC7C0100898995 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F6AAE5729EBBC0100843D71;
-			remoteInfo = PreProcessExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3FA833BB29FCF74F0003AB96 /* Embed Frameworks */ = {
@@ -91,7 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				3F6AAE6029EBBC0100843D71 /* PreProcessRecorder.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,10 +87,6 @@
 		3F14BDD129BF06F900F12FE7 /* EpisodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		3F58AE2529B18344007E7703 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		3F68242129AEBF270044A0F2 /* PreProcess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PreProcess.xcdatamodel; sourceTree = "<group>"; };
-		3F6AAE5829EBBC0100843D71 /* PreProcessRecorder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PreProcessRecorder.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F6AAE5B29EBBC0100843D71 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
-		3F6AAE5D29EBBC0100843D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F6AAE6429EBBC0800843D71 /* PreProcessExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreProcessExtension.entitlements; sourceTree = "<group>"; };
 		3F6FE07D29C424230061DBF5 /* StaticEpisodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticEpisodeView.swift; sourceTree = "<group>"; };
 		3F7BB7DA29E0112900D8A0BB /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
 		3F7BB7DC29E26C7000D8A0BB /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
@@ -150,17 +123,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F6AAE5529EBBC0100843D71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FDFCE4929ED109700988BAF /* KeychainSwift in Frameworks */,
-				3FDFCE4729ED109200988BAF /* SQLite in Frameworks */,
-				3FDFCE4D29ED10A400988BAF /* ObjcExceptionBridging in Frameworks */,
-				3FDFCE4B29ED109F00988BAF /* XCGLogger in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FCAA1F929AC7C0100898995 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,16 +151,6 @@
 				3F0B8BFD29B310E40018BD60 /* ScreenRecorder.swift */,
 			);
 			path = Perceive;
-			sourceTree = "<group>";
-		};
-		3F6AAE5A29EBBC0100843D71 /* PreProcessExtension */ = {
-			isa = PBXGroup;
-			children = (
-				3F6AAE6429EBBC0800843D71 /* PreProcessExtension.entitlements */,
-				3F6AAE5B29EBBC0100843D71 /* SampleHandler.swift */,
-				3F6AAE5D29EBBC0100843D71 /* Info.plist */,
-			);
-			path = PreProcessExtension;
 			sourceTree = "<group>";
 		};
 		3F8F932829B5CF9C00C938DE /* Frameworks */ = {
@@ -288,7 +240,6 @@
 			children = (
 				3FC6C78F29CCF773004E19FF /* Packages */,
 				3FCAA1FE29AC7C0100898995 /* PreProcess */,
-				3F6AAE5A29EBBC0100843D71 /* PreProcessExtension */,
 				3FCAA1FD29AC7C0100898995 /* Products */,
 				3F8F932829B5CF9C00C938DE /* Frameworks */,
 			);
@@ -298,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				3FCAA1FC29AC7C0100898995 /* PreProcess.app */,
-				3F6AAE5829EBBC0100843D71 /* PreProcessRecorder.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,29 +315,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F6AAE5729EBBC0100843D71 /* PreProcessRecorder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F6AAE6129EBBC0100843D71 /* Build configuration list for PBXNativeTarget "PreProcessRecorder" */;
-			buildPhases = (
-				3F6AAE5429EBBC0100843D71 /* Sources */,
-				3F6AAE5529EBBC0100843D71 /* Frameworks */,
-				3F6AAE5629EBBC0100843D71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PreProcessRecorder;
-			packageProductDependencies = (
-				3FDFCE4629ED109200988BAF /* SQLite */,
-				3FDFCE4829ED109700988BAF /* KeychainSwift */,
-				3FDFCE4A29ED109F00988BAF /* XCGLogger */,
-				3FDFCE4C29ED10A400988BAF /* ObjcExceptionBridging */,
-			);
-			productName = PreProcessExtension;
-			productReference = 3F6AAE5829EBBC0100843D71 /* PreProcessRecorder.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		3FCAA1FB29AC7C0100898995 /* PreProcess */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FCAA21029AC7C0400898995 /* Build configuration list for PBXNativeTarget "PreProcess" */;
@@ -401,7 +328,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F6AAE5F29EBBC0100843D71 /* PBXTargetDependency */,
 			);
 			name = PreProcess;
 			packageProductDependencies = (
@@ -428,9 +354,6 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					3F6AAE5729EBBC0100843D71 = {
-						CreatedOnToolsVersion = 14.2;
-					};
 					3FCAA1FB29AC7C0100898995 = {
 						CreatedOnToolsVersion = 14.1;
 						LastSwiftMigration = 1420;
@@ -460,19 +383,11 @@
 			projectRoot = "";
 			targets = (
 				3FCAA1FB29AC7C0100898995 /* PreProcess */,
-				3F6AAE5729EBBC0100843D71 /* PreProcessRecorder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F6AAE5629EBBC0100843D71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FCAA1FA29AC7C0100898995 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,20 +403,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F6AAE5429EBBC0100843D71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FDFCE5129ED111900988BAF /* Events.swift in Sources */,
-				3FDFCE4329ED107500988BAF /* PreProcess-Bridging-Header.h in Sources */,
-				3FDFCE4429ED107500988BAF /* Analysis.swift in Sources */,
-				3FDFCE4529ED107500988BAF /* PreProcess.xcdatamodeld in Sources */,
-				3FDFCE4129ED0F8C00988BAF /* Memory.swift in Sources */,
-				3FDFCE4029ED0F8900988BAF /* Persistence.swift in Sources */,
-				3F6AAE5C29EBBC0100843D71 /* SampleHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FCAA1F829AC7C0100898995 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,79 +438,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3F6AAE5F29EBBC0100843D71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 3F6AAE5729EBBC0100843D71 /* PreProcessRecorder */;
-			targetProxy = 3F6AAE5E29EBBC0100843D71 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		3F6AAE6229EBBC0100843D71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = PreProcessExtension/PreProcessExtension.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 9C23YHZU82;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PreProcessExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "PreProcess Recorder";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 0.9;
-				PRODUCT_BUNDLE_IDENTIFIER = test.preprocess;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3F6AAE6329EBBC0100843D71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = PreProcessExtension/PreProcessExtension.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 9C23YHZU82;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PreProcessExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "PreProcess Recorder";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 0.9;
-				PRODUCT_BUNDLE_IDENTIFIER = test.preprocess;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		3FCAA20E29AC7C0400898995 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -662,6 +491,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -717,6 +547,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx13.1;
@@ -756,7 +587,6 @@
 				INFOPLIST_FILE = PreProcess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PreProcess;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PreProcess will access your Photo Library to save timelapses";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -767,15 +597,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = preprocesslabs.preprocess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -817,7 +646,6 @@
 				INFOPLIST_FILE = PreProcess/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PreProcess;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PreProcess will access your Photo Library to save timelapses";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -828,15 +656,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = preprocesslabs.preprocess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -849,15 +676,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F6AAE6129EBBC0100843D71 /* Build configuration list for PBXNativeTarget "PreProcessRecorder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F6AAE6229EBBC0100843D71 /* Debug */,
-				3F6AAE6329EBBC0100843D71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3FCAA1F729AC7C0100898995 /* Build configuration list for PBXProject "PreProcess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -967,26 +785,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3FDBE5B929D0029800A4C6C0 /* XCRemoteSwiftPackageReference "XCGLogger" */;
 			productName = XCGLogger;
-		};
-		3FDFCE4629ED109200988BAF /* SQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3F6FE07F29CAB0170061DBF5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
-			productName = SQLite;
-		};
-		3FDFCE4829ED109700988BAF /* KeychainSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3FC6C78929CC2EA2004E19FF /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
-		};
-		3FDFCE4A29ED109F00988BAF /* XCGLogger */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3FDBE5B929D0029800A4C6C0 /* XCRemoteSwiftPackageReference "XCGLogger" */;
-			productName = XCGLogger;
-		};
-		3FDFCE4C29ED10A400988BAF /* ObjcExceptionBridging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3FDBE5B929D0029800A4C6C0 /* XCRemoteSwiftPackageReference "XCGLogger" */;
-			productName = ObjcExceptionBridging;
 		};
 		3FE7822229DB15A8008CB97D /* AXSwift */ = {
 			isa = XCSwiftPackageProductDependency;
